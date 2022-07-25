@@ -1,0 +1,9 @@
+.test{
+    background:linear-gradient(to bottom right, rgba(20, 113, 150, 0.815), rgba(0, 247, 255, 0.781));
+    border-radius: 30px;
+    border:3px solid black;
+}
+.root{
+    padding:10px;
+    background: rgba(0,0,0,0.5);
+}

@@ -1,0 +1,170 @@
+[
+    {
+        "name": "root",
+        "type": "Box",
+        "class": [
+            "root"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.HORIZONTAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "win",
+        "addby": "add"
+    },
+    {
+        "name": "lhs",
+        "type": "Box",
+        "class": [
+            "lhs"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.VERTICAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "root",
+        "addby": "pkgstartF"
+    },
+    {
+        "name": "lhsvert",
+        "type": "Box",
+        "class": [
+            "lhsvert"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.HORIZONTAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "lhs",
+        "addby": "pkgstartF"
+    },
+    {
+        "name": "board",
+        "type": "Grid",
+        "class": [
+            "board"
+        ],
+        "args": [
+            [
+                "set_column_spacing",
+                10
+            ],
+            [
+                "set_row_spacing",
+                10
+            ]
+        ],
+        "parent": "lhsvert",
+        "addby": "pkgendF"
+    },
+    {
+        "name": "lpos",
+        "type": "Box",
+        "class": [
+            "lpos"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.VERTICAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "lhsvert",
+        "addby": "pkgstartF"
+    },
+    {
+        "name": "bpos",
+        "type": "Box",
+        "class": [
+            "lpos"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.HORIZONTAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "lhs",
+        "addby": "pkgendF"
+    },
+    {
+        "name": "rhsSW",
+        "type": "ScrolledWindow",
+        "class": [
+            "rhsSW"
+        ],
+        "args": [],
+        "parent": "root",
+        "addby": "pkgendF"
+    },
+    {
+        "name": "rhs",
+        "type": "Box",
+        "class": [
+            "rhs"
+        ],
+        "args": [
+            [
+                "set_orientation",
+                "Gtk.Orientation.VERTICAL"
+            ],
+            [
+                "set_spacing",
+                10
+            ]
+        ],
+        "parent": "rhsSW",
+        "addby": "add"
+    },
+    {
+        "name": "mvL",
+        "type": "ListBox",
+        "class": [
+            "mvL"
+        ],
+        "args": [],
+        "parent": "rhs",
+        "addby": "pkgstartF"
+    },
+    {
+        "name": "move",
+        "type": "Entry",
+        "class": [
+            "move"
+        ],
+        "args": [
+            [
+                "set_placeholder_text",
+                "'Enter your move'"
+            ]
+        ],
+        "parent": "rhs",
+        "addby": "pkgendNF"
+    }
+]

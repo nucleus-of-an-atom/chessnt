@@ -1,0 +1,57 @@
+.root {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.lhs {
+    border-radius: 10px;
+    background: rgba(252, 250, 250, 0.096);
+}
+
+.lhs {
+    min-width: 500px;
+    padding: 20px;
+}
+
+.rhsSW {
+    min-width: 400px;
+}
+
+.board {
+    padding:5px;
+}
+
+.posX {
+    min-height: 50px;
+    min-width: 50px;
+    border-radius: 4px;
+    background: rgb(23, 23, 24);
+    font-size: 24px;
+    padding: 5px;
+}
+
+.posY,.posA {
+    font-size: 16px;
+    padding: 5px;
+    min-width: 20px;
+    min-height: 50px;
+    background: transparent;
+    border-radius: 0px;
+}
+.posA{
+    min-height: 0;
+    min-width: 50px;
+}
+.posA:nth-child(1){
+    margin-left: 45px;
+}
+.posX:nth-child(16n + 1),
+.posX:nth-child(16n + 3),
+.posX:nth-child(16n + 5),
+.posX:nth-child(16n + 7),
+.posX:nth-child(16n + 10),
+.posX:nth-child(16n + 12),
+.posX:nth-child(16n + 14),
+.posX:nth-child(16n + 16) {
+    background: rgb(100, 103, 104);
+}
